@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Scaling React in big codebases using features</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+		<link rel="stylesheet" href="css/theme/custom-styles.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,294 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Scaling React in big codebases using features</h2>
+				</section>
+				
+				<section>
+					<img class="self-image" src="assets/Vasil.png" alt="">
+					<h4 class="name">Vasil Dimitrov</h4>
+					<p class="about-info">
+						<img class="company-logo" src="assets/twentythree.jpg" alt="">
+						<span class="bullet">&#8226;</span>
+						<span>Front-End Engineer</span>
+						<span class="bullet">&#8226;</span>
+						<span>
+							<a href="https://twitter.com/vydimitrov">@vydimitrov</a>
+						</span>
+					</p>
+				</section>
+				
+				<section class="our-stack">
+					<h4>Our stack</h4>
+					<div class="img-wrapper-top">
+						<img class="react" src="assets/react-logo.png" alt="">
+						<img class="redux"  src="assets/redux-logo.png" alt="">
+					</div>
+					<div class="img-wrapper-bottom">
+							<img src="assets/redux-saga-logo.png" alt="">
+					</div>
+					<span class="conculusion-bottom fragment fade-in">
+						Scale easily while keeping a neat separation of concerns
+					</span>
+				</section>
+				
+				<section class="accounts-dashboard">
+					<h4>Accounts Dashboard</h4>
+					<div class="accounts-image-wrapper">
+					<img class="accounts-image" src="assets/accounts.png" alt="">
+						<span class="fragment accounts-image-leads">
+								<img class="accounts-image" src="assets/accounts-people.png" alt="">
+								<span class="conculusion-bottom">
+									Defining the requirments for implementing the "People you follow" table
+								</span>
+						</span>
+					</div>
+				</section>
+					
+				<section class="people-you-follow">
+					<h4>"People you follow" requirments</h4>
+					<div class="wrapper">
+						<div class="leads-image-wrapper">
+							<img src="assets/accounts-people-you-follow.png" alt="">
+						</div>
+						<div class="requirments-wrapper">
+							<ul class="list">
+								<li class="item fragment">Fetch data</li>
+								<li class="item fragment">Loading state</li>
+								<li class="item fragment">Display data</li>
+								<li class="item fragment">Infinte loading</li>
+								<li class="item fragment">No data state</li>
+								<li class="item fragment">Something went wrong</li>
+							</ul>
+						</div>
+					</div>
+					<span class="fragment conculusion-bottom">Let's see how to implement it</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code people-you-follow-actions">
+						<h4>Actions and action creators</h4>
+						<img src="assets/actions.png" alt="">
+						<span class="fragment conculusion-bottom">Boilerplate code ...</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code people-you-follow-reducer">
+					<h4>Reducer</h4>
+					<div class="reducer-wrapper">
+						<span class="wire-reducer">
+								<img src="assets/wire-reducer.png" alt="">
+						</span>
+						<span class="reducer">
+								<img src="assets/reducer.png" alt="">
+						</span>
+					</div>
+						<span class="fragment conculusion-bottom">Classic reducer implemention</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code people-you-follow-sagas">
+					<h4>Sagas</h4>
+					<div class="saga-wrapper">
+						<span class="init-saga">
+							<img src="assets/wire-saga.png" alt="">
+							<img src="assets/saga-init.png" alt="">
+						</span>
+						<span class="saga-inf">
+								<img src="assets/saga-inf.png" alt="">
+						</span>
+					</div>
+					<span class="fragment conculusion-bottom">Classic sagas implemention</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code people-you-follow-component">
+					<h4>Component</h4>
+						<img src="assets/component.png" alt="">
+					<span class="fragment conculusion-bottom">Seems like a lot is going on for this small table ...</span>
+				</section>
+				
+				<section class="retrospective">
+					<h4>Retrospective</h4>
+					<ul>
+						<li class="fragment">That was insanely too much typing</li>
+						<li class="fragment">You haven't written tests yet</li>
+						<li class="fragment">The best is yet to come ...</li>
+					</ul>
+					<div class="fragment there-is-more">
+						<img src="https://media.giphy.com/media/l0Exdm9UbTHAFcJi0/giphy.gif" alt="">
+					</siv>
+				</section>
+				
+				<section class="accounts-dashboard">
+					<h4>Accounts Dashboard</h4>
+					<div class="accounts-there-is-more">
+						<div class="accounts-image-wrapper">
+							<img class="accounts-image" src="assets/accounts-people.png" alt="">
+							<span class="fragment accounts-image-leads">
+									<img class="accounts-image" src="assets/accounts-companies.png" alt="">
+									<span class="fragment accounts-image-leads">
+											<img class="accounts-image" src="assets/accounts-leads.png" alt="">
+									</span>
+							</span>
+						</div>
+						<div class="requirments-wrapper">
+							<ul class="list">
+									<li class="item">Fetch data</li>
+								<li class="item">Loading state</li>
+								<li class="item">Display data</li>
+								<li class="item">Infinte loading</li>
+								<li class="item">No data state</li>
+								<li class="item">Something went wrong</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section class="feelings">
+					<h4>My inner me is saying ...</h4>
+					<div class="fragment feeling-wrapper">
+						<img src="https://media.giphy.com/media/12XMGIWtrHBl5e/giphy.gif" alt="">
+					</div>
+						<span class="fragment conculusion-bottom">What can we do about it?</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code named-actions">
+					<h4>Tried named action, reducer and sagas</h4>
+					<div class="named-wrapper">
+						<div><img src="assets/named-actions.png" alt=""></div>
+						<div><img src="assets/named-reducer.png" alt=""></div>
+					</div>
+					<ul class="list">
+						<li class="fragment item">Very difficult to wire</li>
+						<li class="fragment item">Need to pass the same namespace on different places</li>
+						<li class="fragment item">Still need to write my components</li>
+					</ul>
+					<div class="fragment">
+						<div class="failed-image">
+							<img src="assets/fail.png" alt="">
+						</div>
+					</div>
+				</section>
+				
+				<section class="kea">
+					<h4>Tried Kea, high level abstraction between React and Redux - 
+						<a href="https://github.com/keajs/kea">link</a>
+					</h4>
+					<img src="assets/kea.png" alt="">
+					<ul class="list">
+						<li class="fragment item">They have thier own implemention of everything</li>
+						<li class="fragment item">Implement some of the saga effects</li>
+					</ul>
+					<div class="fragment">
+						<div class="failed-image">
+							<img src="assets/fail.png" alt="">
+						</div>
+					</div>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-intro">
+					<h4>Develop a better framework</h4>
+					<ul class="list">
+						<li class="fragment item">It should be a component</li>
+						<li class="fragment item">It should combine the component and its business logic</li>
+						<li class="fragment item">Write your business logic once and reuse it across all instances</li>
+						<li class="fragment item">Providing a namespace should be enough to produce a new instance</li>
+						<li class="fragment item">Call it Feature</li>
+					</ul>
+					<div class="fragment image-wrapper">
+						<img src="assets/list-feature.png" alt="">
+						<img class="best-choice" src="assets/best-choice.png" alt="">
+					</div>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-implmentation">
+					<h4>ListFeatureComponent implmentation</h4>
+					<img src="assets/list-feature-implmentation.png" alt="">
+					<p class="text-left">Implemented on top of the bundleFeature, which is resued accross Features. It:</p>
+					<ul class="list">
+						<li class="fragment item">takes a few paramaters - component, actions, etc.</li>
+						<li class="fragment item">will attach reducer and sagas dynamically</li>
+						<li class="fragment item">will inject all reducer props and action creators into the component</li>
+					</ul>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-implmentation-parts component-feature">
+					<h4>ListFeatureComponent implmentation - component</h4>
+					<div class="vertical-center">
+						<img class="first-image" src="assets/component.png" alt="">
+						<span class="fragment vertical-center">
+							<img class="arrow" src="assets/arrow.png" alt="">
+							<img class="second-image" src="assets/component-feature.png" alt="">
+						</span>
+					</div>
+					<span class="fragment conculusion-bottom">Turn into a functinal component and remove redux connect</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-implmentation-parts">
+					<h4>ListFeatureComponent implmentation - actions</h4>
+					<div class="vertical-center">
+						<img src="assets/actions.png" alt="">
+						<span class="fragment vertical-center">
+							<img class="arrow" src="assets/arrow.png" alt="">
+							<img class="action-array"src="assets/actions-array.png" alt="">
+						</span>
+					</div>
+					<span class="fragment conculusion-bottom">No boilerplate code ...</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-implmentation-parts">
+					<h4>ListFeatureComponent implmentation - reducer</h4>
+					<div class="vertical-center">
+						<div class="old-redeucer">
+							<img class="wiring" src="assets/wire-reducer.png" alt="">
+							<img src="assets/reducer.png" alt="">
+						</div>
+						<span class="fragment vertical-center flex-50">
+							<img class="arrow" src="assets/arrow.png" alt="">
+							<img class="reducer-feature"src="assets/reducer-feature.png" alt="">
+						</span>
+					</div>
+					<span class="fragment mt-20 conculusion-bottom">Wrap your reducer in a function, take action names from the function</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code list-feature-implmentation-parts">
+					<h4>ListFeatureComponent implmentation - sagas</h4>
+					<div class="vertical-center">
+						<div class="old-redeucer">
+							<img class="wiring" src="assets/wire-saga.png" alt="">
+							<img src="assets/sagas.png" alt="">
+						</div>
+						<span class="fragment vertical-center flex-50">
+							<img class="arrow" src="assets/arrow.png" alt="">
+							<img class="reducer-feature"src="assets/sagas-feature.png" alt="">
+						</span>
+					</div>
+					<span class="fragment mt-20 conculusion-bottom">Wrap your sagas in a function, take action names from the function</span>
+				</section>
+				
+				<section data-background-transition="zoom" data-background-color="#F8DFBD" class="code bundle-feature">
+					<h4>bundleFeature implmentation</h4>
+					<div class="image-wrapper">
+							<img class="" src="assets/bundle-feature.png" alt="">
+							<img src="assets/bundle-wrapper.png" alt="">
+					</div>
+					<ul class="list">
+						<li class="item">Dependance on redux-dynamic-reducer</li>
+						<li class="item">Will pass down all the props</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h3>Demo - Feature System</h3>
+				</section>
+				
+				<section>
+					<h4>Open Source the Feature System!!!</h4>
+					<img class="fragment" src="https://media.giphy.com/media/dkGhBWE3SyzXW/giphy.gif" alt="">
+				</section>
+				
+				<section>
+					<h1>Thank you</h1>
+				</section>
+					
 			</div>
 		</div>
 
@@ -41,8 +328,10 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				history: true
 			});
 		</script>
 	</body>
