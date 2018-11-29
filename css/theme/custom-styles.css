@@ -1,0 +1,317 @@
+.reveal section img {
+  border: none;
+  margin: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal li {
+  font-size: 32px;
+}
+
+.reveal p {
+  font-size: 36px;
+}
+
+.reveal li + li {
+  margin-top: 10px;
+}
+
+.reveal .code h4,
+.reveal .code li,
+.reveal .code p,
+.reveal .code .conculusion-bottom {
+  color: #000;
+}
+
+.reveal .self-image{
+  border-radius: 50%;
+}
+
+.reveal section .company-logo {
+  width: 80px;
+}
+
+.reveal .about-info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-top: 20px;
+} 
+
+.reveal .name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.reveal .bullet {
+  padding: 0 20px;
+}
+
+.reveal h4 {
+  text-align: left;
+}
+
+.reveal .img-wrapper-bottom,
+.reveal .img-wrapper-top {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.reveal .img-wrapper-top .react {
+  width: 340px;
+  margin-left: -140px;
+}
+
+.reveal .img-wrapper-top .redux {
+  width: 180px;
+  margin-left: 110px;
+}
+
+.reveal .img-wrapper-bottom img {
+  width: 240px;
+}
+
+.reveal .conculusion-bottom {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 28px;
+  margin-top: 60px;
+}
+
+.reveal .mt-20 {
+  margin-top: 20px;
+}
+
+.reveal .text-left {
+  text-align: left;
+}
+
+.accounts-dashboard img {
+  width: 50%;
+}
+
+.accounts-image-wrapper {
+  position: relative;
+}
+
+.accounts-image-leads {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.people-you-follow .wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-top: 50px;
+}
+
+.people-you-follow .wrapper > * {
+  flex: 1 1 50%;
+}
+
+.people-you-follow .wrapper img {
+  max-width: 100%;
+  padding-top: 10px;
+}
+
+.people-you-follow-actions img {
+  width: 55%;
+}
+
+.people-you-follow-reducer .wire-reducer {
+  flex: 0 0 40%;
+}
+
+.people-you-follow-reducer .reducer {
+  flex: 0 0 40%;
+}
+
+.people-you-follow-sagas .saga-wrapper,
+.people-you-follow-reducer .reducer-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.people-you-follow-sagas.init-saga {
+  flex: 0 0 40%;
+}
+
+.people-you-follow-sagas .saga-inf {
+  flex: 0 0 60%;
+}
+
+.people-you-follow-component img {
+  width: 60%;
+}
+
+.retrospective .there-is-more {
+  margin-top: 30px;
+}
+
+.accounts-there-is-more {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.accounts-there-is-more .requirments-wrapper {
+  flex: 0 0 30%;
+}
+
+.accounts-there-is-more .accounts-image-wrapper {
+  flex: 0 0 70%;
+}
+
+.accounts-there-is-more .accounts-image-wrapper img {
+  width: 80%;
+}
+
+.named-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.named-wrapper div:first-of-type {
+  flex: 0 0 40%;
+}
+
+.named-wrapper div:last-of-type {
+  flex: 0 0 40%;
+}
+
+.kea img {
+  width: 70%;
+}
+
+.list-feature-intro .image-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.list-feature-intro .image-wrapper {
+  position: relative;
+}
+
+.list-feature-intro .image-wrapper .best-choice {
+  position: absolute;
+  bottom: -50px;
+  right: 30px;
+  width: 100px;
+}
+
+.list-feature-implmentation img {
+  width: 55%;
+}
+
+.list-feature-implmentation-parts img {
+  width: 50%;
+}
+
+.list-feature-implmentation-parts img.arrow {
+  width: 100px;
+  padding: 0 40px;
+}
+
+.list-feature-implmentation-parts img.action-array {
+  width: 60%;
+}
+
+.vertical-center {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.old-redeucer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  flex: 0 0 40%;
+}
+
+.list-feature-implmentation-parts .old-redeucer img {
+  width: 100%;
+}
+
+.list-feature-implmentation-parts .old-redeucer .wiring {
+  padding-bottom: 20px;
+}
+
+.list-feature-implmentation-parts img.reducer-feature {
+  width: 73%;
+}
+
+.flex-50 {
+  flex: 1 1 50%;
+}
+
+.bundle-feature .image-wrapper {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.bundle-feature .image-wrapper img:first-of-type {
+  width: 50%;
+}
+
+.bundle-feature .image-wrapper img:last-of-type {
+  width: 40%;
+  padding-left: 10%;
+}
+
+.feature-system-use-cases {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.feature-system-use-cases > div:first-child {
+  margin-right: 100px;
+}
+.fragment.visible .failed-image {
+  transform: scale(1);
+}
+
+.failed-image {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  width: 400px;
+  transform: scale(2);
+ transition: all .2s cubic-bezier(0.805, 0.150, 0.360, 1.525);
+}
+
+.named-actions .failed-image {
+  width: 300px;
+}
+
+.component-feature .first-image {
+  width: 39%;
+}
+
+.component-feature .second-image {
+  width: 70%;
+}
