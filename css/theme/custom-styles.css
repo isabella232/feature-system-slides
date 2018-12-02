@@ -76,7 +76,7 @@
 }
 
 .reveal .img-wrapper-bottom img {
-  width: 240px;
+  width: 260px;
 }
 
 .reveal .conculusion-bottom {
@@ -84,7 +84,7 @@
   width: 100%;
   text-align: left;
   font-size: 28px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .reveal .mt-20 {
@@ -96,7 +96,7 @@
 }
 
 .accounts-dashboard img {
-  width: 50%;
+  width: 68%;
 }
 
 .accounts-image-wrapper {
@@ -127,15 +127,16 @@
 }
 
 .people-you-follow-actions img {
-  width: 55%;
+  width: 65%;
 }
 
 .people-you-follow-reducer .wire-reducer {
-  flex: 0 0 40%;
+  width: 30%;
+  margin-bottom: 10px;
 }
 
 .people-you-follow-reducer .reducer {
-  flex: 0 0 40%;
+  width: 60%;
 }
 
 .people-you-follow-sagas .saga-wrapper,
@@ -145,19 +146,32 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
-.people-you-follow-sagas.init-saga {
-  flex: 0 0 40%;
+.people-you-follow-sagas .saga-wrapper > div:first-of-type {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.people-you-follow-sagas .saga-init,
+.people-you-follow-sagas .wire-saga {
+  width: 100%;
 }
 
 .people-you-follow-sagas .saga-inf {
-  flex: 0 0 60%;
+  width: 75%;
 }
 
-.people-you-follow-component img {
-  width: 60%;
+.people-you-follow-sagas .conculusion-bottom {
+  margin-top: 10px;
+}
+
+.people-you-follow-component .component-img {
+  width: 67%;
 }
 
 .retrospective .there-is-more {
@@ -182,6 +196,14 @@
   width: 80%;
 }
 
+.god-no {
+  width: 55%;
+}
+
+.design-principles .conculusion-bottom {
+  margin-top: 80px;
+}
+
 .named-wrapper {
   display: -webkit-flex;
   display: -ms-flex;
@@ -190,11 +212,11 @@
 }
 
 .named-wrapper div:first-of-type {
-  flex: 0 0 40%;
+  flex: 0 0 45%;
 }
 
 .named-wrapper div:last-of-type {
-  flex: 0 0 40%;
+  flex: 0 0 55%;
 }
 
 .kea img {
@@ -208,6 +230,7 @@
 
 .list-feature-intro .image-wrapper {
   position: relative;
+  margin-top: 40px;
 }
 
 .list-feature-intro .image-wrapper .best-choice {
@@ -226,8 +249,8 @@
 }
 
 .list-feature-implmentation-parts img.arrow {
-  width: 100px;
-  padding: 0 40px;
+  width: 80px;
+  padding: 0 20px;
 }
 
 .list-feature-implmentation-parts img.action-array {
@@ -246,8 +269,16 @@
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  width: 40%;
-  flex: 0 0 40%;
+  width: 50%;
+  flex: 0 0 50%;
+}
+
+.reveal .pull-left {
+  margin-left: -50px;
+}
+
+.list-feature-implmentation-parts .old-redeucer img:first-of-type {
+  width: 60%;
 }
 
 .list-feature-implmentation-parts .old-redeucer img {
@@ -259,7 +290,8 @@
 }
 
 .list-feature-implmentation-parts img.reducer-feature {
-  width: 73%;
+  width: 100%;
+  margin-top: 55px;
 }
 
 .flex-50 {
@@ -309,9 +341,34 @@
 }
 
 .component-feature .first-image {
-  width: 39%;
+  width: 50%;
 }
 
 .component-feature .second-image {
+  width: 100%;
+}
+
+.component-feature .image-wrapper {
+  margin-left: -60px;
+}
+
+.reveal .old-sagas {
+  width: 45%;
+  flex: 0 0 45%;
+}
+
+.reveal .old-sagas img {
+  width: 100%;
+}
+
+.reveal .old-sagas span:first-of-type img {
   width: 70%;
+}
+
+.list-feature-implmentation-parts img.saga-feature {
+  width: 100%;
+}
+
+.reveal .sagas-wrapper {
+  margin-top: 50px;
 }
